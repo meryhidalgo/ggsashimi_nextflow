@@ -51,7 +51,7 @@ process sashimi {
         -b ${configs} \\
         -c \$correct_coord \\
         -g ${ref_gtf} \\
-        -P ${palette} \\
+        --palette /media/neuro-rna/E2285B0C285ADF5B/EPI2ME-pipelines/workflows/blazquezlab/sashimis/assets/palette.tsv \\
         -o sashimi_${configs.simpleName}.pdf \\
         -M ${params.sashimi_min_cov} \\
         --alpha ${params.sashimi_alpha} \\

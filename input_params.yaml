@@ -4,29 +4,25 @@
 # You can also use full paths instead  
 
 # ---- required settings ----
-run_name: 'maria_iPSCs'
+run_name: 'sashimis_feb25'
 
-input_fastq: "inputs/fastqs"
-ref_fa: "/scratch/heral/indexes/GRCh38.primary_assembly.genome.fa"
-ref_bed: "/scratch/heral/indexes/gencode.v41.primary_assembly.annotation.bed"
-ref_gtf: "/scratch/heral/indexes/gencode.v41.primary_assembly.annotation.gtf"
-plots_config: "inputs/plots.csv"
+input_bam: "/home/neuro-rna/Documents/plasmidsaurus_20250217/5FWGX9/Feb25AneV_raw-reads/MOE-E/bams"
+ref_gtf: "/media/neuro-rna/E2285B0C285ADF5B/experiments/reference_files/human/gencode.v41.primary_assembly.annotation.gtf"
+plots_config: "/home/neuro-rna/Documents/plasmidsaurus_20250217/5FWGX9/Feb25AneV_raw-reads/MOE-E/bams/plots_config.csv"
 
-output_dir: "output-maria_iPSCs"
+output_dir: "sashimis_feb25"
 
 # ---- length filtering ----
-min_len: 200
-max_len: 5000
+min_len: 500
+max_len: 1000
 
 # ---- optional arguments ----
-run_porechop: true
-get_bams: true
-get_sashimis: false
+get_sashimis: true
 
 # ---- ggsashimi options ----
-sashimi_min_cov: 5
+sashimi_min_cov: 100
 sashimi_alpha: 0.6
-sashimi_collapse_groups: false
+sashimi_collapse_groups: true
 sashimi_shrink: false
 sashimi_fix_scale: true
 sashimi_annot_height: 5
