@@ -4,7 +4,7 @@ nextflow.enable.dsl=2
 include { processCSV; sashimi} from './modules/create_plots'
 
 // ---- Input files ----
-sashimi_palette = Channel.value(projectDir + "/assets/palette.txt")
+sashimi_palette = Channel.value(projectDir + "/assets/palette.tsv")
 
 gtf = Channel.value(params.ref_gtf)
 
