@@ -6,8 +6,6 @@ include { processCSV; sashimi} from './modules/create_plots'
 // ---- Input files ----
 sashimi_palette = Channel.value(projectDir + "/assets/palette.tsv")
 
-gtf = Channel.value(params.ref_gtf)
-
 plots_csv = Channel.fromPath(params.plots_config)
 
 input_bams = Channel.fromPath("$params.input_bam/*.bam*", checkIfExists: true)
