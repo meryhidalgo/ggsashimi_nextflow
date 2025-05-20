@@ -22,6 +22,6 @@ workflow {
     processCSV(plots_csv) | flatten \
     | set { bams_tsvs }
 
-    sashimi(all_bams, gtf, sashimi_palette, bams_tsvs)
+    sashimi(all_bams, sashimi_palette, bams_tsvs)
 
 }

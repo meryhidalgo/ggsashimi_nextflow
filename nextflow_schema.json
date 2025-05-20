@@ -39,13 +39,6 @@
                     "description": "path to the directory containing the BAMS files to plot",
                     "default": "input_bams/"
                 },
-                "ref_gtf": {
-                    "type": "string",
-                    "description": "path to the reference GTF file to include transcript annotations in sashimis",
-                    "format": "file-path",
-                    "default": "reference.gtf",
-                    "pattern": ".*\\.gtf$"
-                },
                 "plots_config": {
                     "type": "string",
                     "description": "path to the CSV file containing plot configuration.",
@@ -57,7 +50,6 @@
             },
             "required": [
                 "input_bam",
-                "ref_gtf",
                 "plots_config"
             ]
         },
@@ -117,6 +109,18 @@
                     "type": "integer",
                     "default": 15,
                     "description": "width in cm of the output plot"
+                },
+                "sashimi_gtf_annotations": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "whether to show reference annotations in sashimi plot (only if exons are annotated)"
+                },
+                "ref_gtf": {
+                    "type": "string",
+                    "description": "path to the reference GTF file to include transcript annotations in sashimis",
+                    "format": "file-path",
+                    "default": "reference.gtf",
+                    "pattern": ".*\\.gtf$"
                 }
             }
         }

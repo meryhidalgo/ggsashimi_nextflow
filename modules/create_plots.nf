@@ -32,7 +32,6 @@ process sashimi {
 
     input:
         path bams
-        path ref_gtf
         path palette
         path configs
     
@@ -50,13 +49,13 @@ process sashimi {
     /ggsashimi.py \\
         -b ${configs} \\
         -c \$correct_coord \\
-        -g ${ref_gtf} \\
         --palette ${palette} \\
         -o sashimi_${configs.simpleName}.pdf \\
         -M ${params.sashimi_min_cov} \\
         --alpha ${params.sashimi_alpha} \\
         --ann-height ${params.sashimi_annot_height} \\
         --width ${params.sashimi_width} \\
+        ${params.sashimi_gtf_annotations ? '-g ${params.ref_gtf}' : ''} \\
         ${params.sashimi_fix_scale ? '--fix-y-scale' : ''}  \\
         ${params.sashimi_shrink ? '--shrink' : ''} \\
         ${params.sashimi_collapse_groups ? '-C 3' : ''}
