@@ -7,7 +7,6 @@
 run_name: 'sashimis_feb25'
 
 input_bam: "/home/neuro-rna/Documents/plasmidsaurus_20250217/5FWGX9/Feb25AneV_raw-reads/MOE-E/bams"
-ref_gtf: "/media/neuro-rna/E2285B0C285ADF5B/experiments/reference_files/human/gencode.v41.primary_assembly.annotation.gtf"
 plots_config: "/home/neuro-rna/Documents/plasmidsaurus_20250217/5FWGX9/Feb25AneV_raw-reads/MOE-E/bams/plots_config.csv"
 
 output_dir: "sashimis_feb25"
@@ -27,3 +26,5 @@ sashimi_shrink: false
 sashimi_fix_scale: true
 sashimi_annot_height: 5
 sashimi_width: 15
+sashimi_gtf_annotations: true
+ref_gtf: "/media/neuro-rna/E2285B0C285ADF5B/experiments/reference_files/human/gencode.v41.primary_assembly.annotation.gtf"
