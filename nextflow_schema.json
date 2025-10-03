@@ -15,11 +15,6 @@
                     "default": "test_run",
                     "description": "name of the experiment (files will be named after it)"
                 },
-                "output_dir": {
-                    "type": "string",
-                    "hidden": true,
-                    "default": "output-pipeline"
-                },
                 "get_sashimis": {
                     "type": "boolean",
                     "default": true,
@@ -46,11 +41,17 @@
                     "format": "file-path",
                     "default": "plots_config.csv",
                     "pattern": ".*\\.csv$"
+                },
+                "output_dir": {
+                    "type": "string",
+                    "hidden": false,
+                    "default": "output-pipeline"
                 }
             },
             "required": [
                 "input_bam",
-                "plots_config"
+                "plots_config",
+                "output_dir"
             ]
         },
         "qc_options": {
