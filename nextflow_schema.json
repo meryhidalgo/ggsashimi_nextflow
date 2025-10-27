@@ -44,8 +44,9 @@
                 },
                 "output_dir": {
                     "type": "string",
+                    "format": "directory-path",
                     "hidden": false,
-                    "default": "output-pipeline"
+                    "default": "output-pipeline/"
                 }
             },
             "required": [
