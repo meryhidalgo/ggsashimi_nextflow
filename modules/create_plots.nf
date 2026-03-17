@@ -57,6 +57,7 @@ process sashimi {
         --palette ${palette} \\
         -o sashimi_${configs.simpleName}.pdf \\
         -M ${params.sashimi_min_cov} \\
+        --aggr ${params.sashimi_aggregation} \\
         --alpha ${params.sashimi_alpha} \\
         --ann-height ${params.sashimi_annot_height} \\
         --width ${params.sashimi_width} \\
