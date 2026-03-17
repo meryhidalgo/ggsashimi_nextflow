@@ -117,6 +117,11 @@
                     "default": "median_j",
                     "description": "Aggregate function for overlay: <mean> <median> <mean_j> <median_j>. Use mean_j | median_j to keep density overlay but aggregate junction counts."
                 },
+                "sashimi_basesize": {
+                    "type": "integer",
+                    "default": 14,
+                    "description": "Base font size of the plot."
+                },
                 "sashimi_gtf_annotations": {
                     "type": "boolean",
                     "default": false,

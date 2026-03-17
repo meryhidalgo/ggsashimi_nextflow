@@ -61,6 +61,7 @@ process sashimi {
         --alpha ${params.sashimi_alpha} \\
         --ann-height ${params.sashimi_annot_height} \\
         --width ${params.sashimi_width} \\
+        --base-size ${params.sashimi_basesize} \\
         ${params.sashimi_collapse_groups ? '-C 3 -O 3' : ''} \\
         ${params.sashimi_gtf_annotations ? "-g \"${params.ref_gtf}\"" : ''} \\
         ${params.sashimi_fix_scale ? '--fix-y-scale' : ''}  \\
