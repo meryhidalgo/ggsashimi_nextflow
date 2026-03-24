@@ -63,7 +63,7 @@
             "properties": {
                 "min_len": {
                     "type": "integer",
-                    "default": 200,
+                    "default": 100,
                     "description": "minimum length a read should have in order to be processed"
                 },
                 "max_len": {
@@ -81,7 +81,7 @@
             "properties": {
                 "sashimi_min_cov": {
                     "type": "integer",
-                    "default": 5,
+                    "default": 10,
                     "description": "minimum coverage of an event in order to be included"
                 },
                 "sashimi_alpha": {
@@ -91,6 +91,7 @@
                 },
                 "sashimi_collapse_groups": {
                     "type": "boolean",
+                    "default": true,
                     "description": "collapse the files by group"
                 },
                 "sashimi_shrink": {

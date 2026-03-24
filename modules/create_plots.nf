@@ -33,7 +33,7 @@ process processCSV {
 process sashimi {
     tag "Sashimi-plot"
 
-    publishDir "${params.output_dir}/sashimis", mode: 'copy', pattern: "*.pdf"
+    publishDir "${params.output_dir}/sashimis", mode: 'copy', pattern: "*"
 
     input:
         path bams
@@ -41,7 +41,7 @@ process sashimi {
         path configs
     
     output:
-        path "*.pdf"
+        path "*"
 
     when:
         params.get_sashimis == true
