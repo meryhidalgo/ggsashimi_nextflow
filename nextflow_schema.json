@@ -115,7 +115,7 @@
                 "sashimi_height": {
                     "type": "integer",
                     "default": 2,
-                    "description": ""Height of the individual signal plot in inches""
+                    "description": "Height of the individual signal plot in inches"
                 },
                 "sashimi_aggregation": {
                     "type": "string",
