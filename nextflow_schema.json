@@ -102,11 +102,6 @@
                     "default": true,
                     "description": "set the same Y-axis scale to all the groups/files"
                 },
-                "sashimi_annot_height": {
-                    "type": "integer",
-                    "default": 5,
-                    "description": "height of the annotations in the transcript track"
-                },
                 "sashimi_width": {
                     "type": "integer",
                     "default": 15,
@@ -143,6 +138,11 @@
                     "format": "file-path",
                     "default": "reference.gtf",
                     "pattern": ".*\\.gtf$"
+                },
+                "sashimi_annot_height": {
+                    "type": "integer",
+                    "default": 5,
+                    "description": "height of the annotations in the transcript track"
                 }
             }
         }
