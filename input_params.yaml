@@ -29,6 +29,6 @@ sashimi_basesize: 20
 sashimi_annot_height: 5
 sashimi_width: 15
 sashimi_height: 2
-sashimi_out-format: "pdf"
+sashimi_out_format: "pdf"
 sashimi_gtf_annotations: false
 ref_gtf: "/media/neuro-rna/E2285B0C285ADF5B/experiments/reference_files/human/gencode.v41.primary_assembly.annotation.gtf"

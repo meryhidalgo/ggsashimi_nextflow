@@ -127,7 +127,7 @@
                     "default": 14,
                     "description": "Base font size of the plot."
                 },
-                "sashimi_out-format": {
+                "sashimi_out_format": {
                     "type": "string",
                     "default": "pdf",
                     "description": "Output file format: <pdf> <svg> <png> <jpeg> <tiff>"
